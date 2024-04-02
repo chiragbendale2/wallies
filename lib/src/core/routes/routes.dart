@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:wallies/src/core/routes/app_routes.dart';
+import 'package:wallies/src/core/utils/services/fade_route_trasition.dart';
 import 'package:wallies/src/core/utils/services/navigation_service.dart';
 import 'package:wallies/src/core/utils/services/navigator_observer.dart';
 import 'package:wallies/src/features/categories/presentation/pages/categories_screen.dart';
@@ -26,7 +27,14 @@ class Routes {
       GoRoute(
         name: AppRoutes.index,
         path: AppRoutes.index,
-        builder: (context, state) => const IndexScreen(),
+        pageBuilder: (context, state) {
+          return fadeRouteTransition(
+            context: context,
+            state: state,
+            child: const IndexScreen(),
+          );
+        },
+        // builder: (context, state) => const IndexScreen(),
       ),
       GoRoute(
         name: AppRoutes.home,

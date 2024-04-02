@@ -7,4 +7,8 @@ class AppAssets {
   static String categoriesIcon = 'assets/icons/categories.png';
   static String randomIcon = 'assets/icons/random.png';
   static String myAccountIcon = 'assets/icons/my_account.png';
+
+  // animations
+  static String wallpaperChangingJson =
+      'assets/animations/wallpaper_changing.json';
 }
