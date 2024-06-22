@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:wallies/src/features/home/presentation/bloc/home_bloc.dart';
 import 'package:wallies/src/features/home/presentation/widgets/floating_tab_bar.dart';
 import 'package:wallies/src/features/home/presentation/widgets/popular_grid.dart';
@@ -40,8 +41,10 @@ class _HomeScreenState extends State<HomeScreen>
               headerSliverBuilder:
                   (BuildContext context, bool innerBoxIsScrolled) {
                 return [
-                  const TopAppBar(
-                    appBarTitle: 'My Wallies',
+                  TopAppBar(
+                    appBarTitle: 'wallies',
+                    titleFontFamily: 'MarcheScript',
+                    titleFontSize: 24.sp,
                     searchEnabled: true,
                   ),
                   SliverPersistentHeader(

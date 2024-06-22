@@ -46,7 +46,7 @@ class _AppBottomBarState extends State<AppBottomBar> {
           // unselectedItemColor: AppColors.whiteColor.withOpacity(0.75),
           // selectedItemColor: AppColors.whiteColor.withOpacity(0.9),
           selectedItemSplashColor: AppColors.primaryLightColor,
-          selectedColorOpacity: 0.25,
+          selectedColorOpacity: 0.35,
           onTap: (index) {
             indexBloc.selectedIndex.value = index;
           },

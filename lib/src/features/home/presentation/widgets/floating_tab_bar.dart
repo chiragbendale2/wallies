@@ -36,36 +36,37 @@ class _FloatingTabBarState extends State<FloatingTabBar> {
             automaticIndicatorColorAdjustment: true,
             tabAlignment: TabAlignment.start,
             padding: const EdgeInsets.only(),
-            indicatorPadding: const EdgeInsets.symmetric(horizontal: 5),
-            indicatorSize: TabBarIndicatorSize.tab,
-            indicator: BoxDecoration(
-              color: AppColors.transparent,
-              border: BorderDirectional(
-                bottom: BorderSide(
-                  width: 1.5,
-                  color: AppColors.whiteColor.withOpacity(0.7),
-                ),
-              ),
-            ),
-            labelColor: AppColors.whiteColor.withOpacity(0.7),
-            labelPadding: const EdgeInsets.symmetric(horizontal: 18),
+            // indicatorPadding: EdgeInsets.symmetric(horizontal: 12.sp),
+            indicatorColor: AppColors.whiteColor,
+            indicatorWeight: 3.5,
+
+            indicatorSize: TabBarIndicatorSize.label,
+            // indicator: BoxDecoration(
+            //   color: AppColors.transparent,
+            //   border: BorderDirectional(
+            //     bottom: BorderSide(
+            //       width: 1.8,
+            //       color: AppColors.whiteColor.withOpacity(0.7),
+            //     ),
+            //   ),
+            // ),
+            labelColor: AppColors.whiteColor,
+            labelPadding: const EdgeInsets.symmetric(horizontal: 13),
             unselectedLabelColor: AppColors.whiteColor.withOpacity(0.35),
-            labelStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 16.sp),
+            labelStyle: TextStyle(
+              fontWeight: FontWeight.w600,
+              fontSize: 16.sp,
+              letterSpacing: 0.2,
+            ),
             unselectedLabelStyle:
-                TextStyle(fontWeight: FontWeight.w400, fontSize: 16.sp),
+                TextStyle(fontWeight: FontWeight.w500, fontSize: 16.sp),
             onTap: (ind) {
               // indexBloc.selectedIndex.value = ind;
             },
             tabs: const [
-              Tab(
-                child: Text('Recent Views'),
-              ),
-              Tab(
-                child: Text('Popular'),
-              ),
-              Tab(
-                child: Text('Trending'),
-              ),
+              Tab(text: 'RECENT VIEWS'),
+              Tab(text: 'POPULAR'),
+              Tab(text: 'TRENDING'),
             ],
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:wallies/src/features/home/presentation/widgets/top_app_bar.dart';
 import 'package:wallies/src/features/random/presentation/widgets/random_grid.dart';
 
@@ -12,8 +13,10 @@ class RandomScreen extends StatelessWidget {
         floatHeaderSlivers: true,
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return [
-            const TopAppBar(
+            TopAppBar(
               appBarTitle: 'Random',
+              titleFontFamily: 'MarcheScript',
+              titleFontSize: 23.sp,
               searchEnabled: false,
             ),
           ];

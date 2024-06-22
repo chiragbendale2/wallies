@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wallies/src/core/utils/constant/app_colors.dart';
+import 'package:wallies/src/core/utils/constant/app_dimensions.dart';
 
 class RecentViewsGrid extends StatelessWidget {
   const RecentViewsGrid({super.key});
@@ -7,10 +8,10 @@ class RecentViewsGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(
-        left: 10,
-        right: 10,
-        top: 10,
+      padding: EdgeInsets.only(
+        left: AppDimentions.horizontalSpacing,
+        right: AppDimentions.horizontalSpacing,
+        top: AppDimentions.horizontalSpacing,
       ),
       child: GridView.builder(
         shrinkWrap: true,

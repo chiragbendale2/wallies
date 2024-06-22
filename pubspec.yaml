@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.1 <4.0.0'
+  sdk: '>=3.3.3 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -63,6 +63,7 @@ dependencies:
 
   # Lottie Animations
   lottie: ^3.1.0
+  flutter_animate: ^4.5.0
 
 dev_dependencies:
   flutter_test:
@@ -88,13 +89,18 @@ flutter:
     - assets/animations/
 
   fonts:
-    - family: TyrosPro
+    - family: OpenSans
       fonts:
-        - asset: assets/fonts/TyrosPro-Medium.ttf
-        - asset: assets/fonts/TyrosPro-Bold.ttf
-          weight: 700
-    - family: Poppins
+        - asset: assets/fonts/OpenSans-Regular.ttf
+        - asset: assets/fonts/OpenSans-Italic.ttf
+          style: italic
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
+    - family: Roboto
       fonts:
-        - asset: assets/fonts/Poppins-Medium.ttf
-        - asset: assets/fonts/Poppins-Bold.ttf
-          weight: 700
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 600
+    - family: MarcheScript
+      fonts:
+        - asset: assets/fonts/MarcheScript.otf

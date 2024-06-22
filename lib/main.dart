@@ -55,11 +55,13 @@ class MyApp extends StatelessWidget {
             home: MaterialApp.router(
               debugShowCheckedModeBanner: false,
               title: 'The Wallies',
+              themeMode: ThemeMode.dark,
+
               theme: AppTheme().darkTheme,
-              // routerConfig: Routes.router,
-              routeInformationProvider: Routes.router.routeInformationProvider,
-              routeInformationParser: Routes.router.routeInformationParser,
-              routerDelegate: Routes.router.routerDelegate,
+              routerConfig: Routes.router,
+              // routeInformationProvider: Routes.router.routeInformationProvider,
+              // routeInformationParser: Routes.router.routeInformationParser,
+              // routerDelegate: Routes.router.routerDelegate,
             ),
           );
         },

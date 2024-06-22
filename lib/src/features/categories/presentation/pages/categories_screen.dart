@@ -29,13 +29,17 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         floatHeaderSlivers: true,
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return [
-            const TopAppBar(
+            TopAppBar(
               appBarTitle: 'Categories',
+              titleFontFamily: 'MarcheScript',
+              titleFontSize: 23.sp,
               searchEnabled: false,
+              appBarHeight: 72,
             ),
           ];
         },
         body: SingleChildScrollView(
+          padding: EdgeInsets.only(top: 10),
           child: Column(
             children: [
               ListView.separated(

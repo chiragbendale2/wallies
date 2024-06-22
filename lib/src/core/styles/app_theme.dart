@@ -15,7 +15,7 @@ class AppTheme {
     textTheme: const TextTheme(
       titleLarge: TextStyle(
         fontSize: 20.0,
-        fontFamily: 'TyrosPro',
+        fontFamily: 'OpenSans',
         fontWeight: FontWeight.bold,
       ),
       bodyMedium: TextStyle(
